@@ -1,8 +1,22 @@
+package POJO;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Player {
     private String name;
     private String country;
     private String role;
-    private int price_in_crores;
+    @JsonProperty("price-in-crores")
+    private String priceInCrores;
+    public String getPriceInCrores() {
+        return priceInCrores;
+    }
+
+    public void setPriceInCrores(String priceInCrores) {
+        this.priceInCrores = priceInCrores;
+    }
+
+
     public String getName() {
         return name;
     }
@@ -26,15 +40,6 @@ public class Player {
     public void setRole(String role) {
         this.role = role;
     }
-
-    public int getPrice_in_crores() {
-        return price_in_crores;
-    }
-
-    public void setPrice_in_crores(int price_in_crores) {
-        this.price_in_crores = price_in_crores;
-    }
-
 
 
 }

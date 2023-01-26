@@ -1,7 +1,19 @@
-public class RCBTeams {
+package POJO;
+
+import java.util.List;
+
+public class RCBTeam {
     private String name;
     private String location;
-    private Player player;
+    private List<Player> player;
+
+    public List<Player> getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(List<Player> player) {
+        this.player = player;
+    }
 
     public String getName() {
         return name;
@@ -19,13 +31,7 @@ public class RCBTeams {
         this.location = location;
     }
 
-    public Player getPlayer() {
-        return player;
-    }
 
-    public void setPlayer(Player player) {
-        this.player = player;
-    }
 
 
 
